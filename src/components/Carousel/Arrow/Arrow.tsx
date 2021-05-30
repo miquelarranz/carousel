@@ -17,10 +17,22 @@ export interface IArrowProps {
 export const Arrow = ({ direction, onClick }: IArrowProps) => {
     const classes = useArrowStyles();
     const isLeftDirection = direction === ArrowDirection.Left;
+    const leftArrowID = 'left-arrow';
+    const rightArrowID = 'right-arrow';
 
     return isLeftDirection ? (
-        <FontAwesomeIcon onClick={onClick} className={classes.icon} icon={faArrowCircleLeft} />
+        <FontAwesomeIcon
+            data-testid={leftArrowID}
+            onClick={onClick}
+            className={classes.icon}
+            icon={faArrowCircleLeft}
+        />
     ) : (
-        <FontAwesomeIcon onClick={onClick} className={classes.icon} icon={faArrowCircleRight} />
+        <FontAwesomeIcon
+            data-testid={rightArrowID}
+            onClick={onClick}
+            className={classes.icon}
+            icon={faArrowCircleRight}
+        />
     );
 };

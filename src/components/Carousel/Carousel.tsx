@@ -21,7 +21,7 @@ export const Carousel = ({ name, slides }: ICarouselProps) => {
         return (
             <div className={classes.slides}>
                 {slides.map((slide: React.ReactNode, index: number) => {
-                    return currentSlide === index && <Slide content={slides[currentSlide]} />;
+                    return currentSlide === index && <Slide key={index} content={slide} />;
                 })}
             </div>
         );
@@ -38,7 +38,7 @@ export const Carousel = ({ name, slides }: ICarouselProps) => {
     };
 
     return (
-        <div id={name} className={classes.container}>
+        <div data-testid={name} className={classes.container}>
             <div className={classes.arrow}>
                 <Arrow direction={ArrowDirection.Left} onClick={onLeftClickHandler} />
             </div>
