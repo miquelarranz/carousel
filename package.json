@@ -1,6 +1,6 @@
 {
-  "name": "carousel",
-  "version": "1.0.0-beta.0",
+  "name": "@miquelarranz/carousel",
+  "version": "1.0.0",
   "description": "Carousel component in React",
   "main": "index.js",
   "scripts": {
@@ -10,14 +10,14 @@
     "build": "tsc"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
+    "registry":"https://npm.pkg.github.com"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/miquelarranz/carousel.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "miquelarranz",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/miquelarranz/carousel/issues"
