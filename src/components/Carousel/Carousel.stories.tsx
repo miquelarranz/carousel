@@ -27,10 +27,28 @@ const slides: React.ReactNode[] = [
     <img src="https://i.picsum.photos/id/168/200/200.jpg?hmac=VxnpUGg87Q47YRONmdsU2vNGSPjCs5vrwiAL-0hEIHM" />,
 ];
 
+const bigSlides: React.ReactNode[] = [
+    <img src="https://i.picsum.photos/id/485/700/100.jpg?hmac=cMHzEpRz8qODO22bG8lpcJqAdBs9mssD2p5pVizqKW8" />,
+    <img src="https://i.picsum.photos/id/611/700/100.jpg?hmac=laAPLgGaVKfVFl_99S7t7waanJn4TF3_N3PaaIaMbyo" />,
+    <img src="https://i.picsum.photos/id/985/700/100.jpg?hmac=sX2MnGOfDI-UGaXgxqIwHTRipwOBvkzv6EiKhVnwTPk" />,
+];
+
 export const Basic = () => <Carousel name="basic-carousel" slides={slides} />;
 
 export const Small = () => (
     <div style={{ width: 300, height: 300 }}>
-        <Carousel name="basic-carousel" slides={slides} />
+        <Carousel name="small-carousel" slides={slides} />
+    </div>
+);
+
+export const WithBigSlides = () => (
+    <div style={{ width: 300, height: 300 }}>
+        <Carousel name="big-slides-carousel" slides={bigSlides} />
+    </div>
+);
+
+export const WithManualPositioning = () => (
+    <div style={{ width: 300, height: 300 }}>
+        <Carousel name="big-slides-carousel" slides={bigSlides} currentPosition={2} />
     </div>
 );

@@ -1,17 +1,15 @@
 {
-  "name": "@miquelarranz/carousel",
+  "name": "carousel-component-lib",
   "version": "1.0.0",
   "description": "Carousel component in React",
-  "main": "index.js",
+  "main": "dist/src/index.js",
+  "distDir": "dist/",
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "test": "jest --verbose",
     "build-storybook": "build-storybook",
-    "build": "tsc"
+    "build": "rm -rf dist && tsc --project tsconfig.prod.json --declaration"
   },
-  "publishConfig": {
-    "registry":"https://npm.pkg.github.com"
-},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/miquelarranz/carousel.git"

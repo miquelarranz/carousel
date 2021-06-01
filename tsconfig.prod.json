@@ -1,0 +1,19 @@
+{
+	"extends": "./tsconfig.json",
+	"compilerOptions": {
+		"sourceMap": false
+	},
+	"exclude": [
+		"node_modules",
+		"dist",
+		"stories",
+		"scripts",
+		"acceptance-tests",
+		"webpack",
+		"jest",
+		"jest.config.js",
+		"webpack.config.js",
+		"**/__tests__",
+		"**/*.stories.tsx"
+	]
+}

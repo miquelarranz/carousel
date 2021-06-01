@@ -14,5 +14,6 @@ export const useCarouselStyles = createUseStyles({
     slides: {
         height: '100%',
         width: '100%',
+        overflow: 'hidden',
     },
 });
